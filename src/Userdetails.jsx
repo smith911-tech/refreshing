@@ -1,12 +1,14 @@
 import { createContext } from "react"
+import { useState } from "react";
 const UserContext = createContext(); 
 function Userdetails(props) {
+  const [name, setName] = useState("Gabby")
     const Name = "Gabby"
-    const Age = 25
+    const Age = [1,2,3,4,5,6,7,8,9,10]
     function pop(){
       alert("Hello")
     }
-    const value = {Name, Age, pop}
+    const value = {Name, Age, pop, name, setName}
   return (
     <UserContext.Provider value={value}>
       {props.children}
