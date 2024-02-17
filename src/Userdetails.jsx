@@ -4,7 +4,7 @@ const UserContext = createContext();
 function Userdetails(props) {
   const [name, setName] = useState("Gabby")
     const Name = "Gabby"
-    const Age = [1,2,3,4,5,6,7,8,9,10]
+    const Age = [1,2,3,4]
     function pop(){
       alert("Hello")
     }
